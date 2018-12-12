@@ -3,6 +3,9 @@
 #
 
 on early-init
+    # Disable EAS
+    write /sys/kernel/debug/sched_features NO_ENERGY_AWARE
+
     # Boost schedtune
     write /dev/stune/schedtune.boost 50
     write /dev/stune/schedtune.prefer_idle 1
@@ -84,6 +87,9 @@ on property:sys.boot_completed=1
     chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
     chmod 0666 /sys/class/drm/sde-crtc-0/measured_fps
 
+    # Enable EAS
+    write /sys/kernel/debug/sched_features ENERGY_AWARE
+
     write /dev/stune/schedtune.prefer_idle 0
     write /dev/stune/schedtune.boost 0
 
@@ -136,3 +142,6 @@ on property:vendor.post_boot.parsed=1
 on charger
     chown system system /sys/class/leds/red/brightness
     write /sys/class/leds/red/brightness 255
+
+    # Enable EAS
+    write /sys/kernel/debug/sched_features ENERGY_AWARE
