@@ -55,6 +55,9 @@ on boot
     # Thermal Profile
     write /sys/class/thermal/thermal_message/sconfig 0
 
+    # Enable suspend to idle mode to reduce latency during suspend/resume
+    write /sys/power/mem_sleep "s2idle"
+
 service nqnfcinfo /vendor/bin/nqnfcinfo
     class late_start
     group nfc
