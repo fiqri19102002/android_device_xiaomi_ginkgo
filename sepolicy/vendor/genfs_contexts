@@ -42,3 +42,6 @@ genfscon sysfs /devices/platform/soc/5e00000.qcom,mdss_mdp/idle_timeout_ms      
 
 # EAS control
 genfscon proc /sys/kernel/sched_energy_aware                                         u:object_r:proc_sched_energy_aware:s0
+
+# FPS Info
+genfscon sysfs /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps u:object_r:vendor_sysfs_graphics:s0
