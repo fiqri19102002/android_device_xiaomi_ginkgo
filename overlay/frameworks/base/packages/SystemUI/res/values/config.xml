@@ -38,4 +38,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     <!-- Height of the status bar header bar when on Keyguard -->
     <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height_portrait</dimen>
+
+    <!-- The CPU temperature sensor path, defaults to empty -->
+    <string name="config_cpuTempSensor" translatable="false">/sys/class/thermal/thermal_zone0/temp</string>
+
+    <!-- The CPU temperature divider, if needed -->
+    <integer name="config_cpuTempDivider" translatable="false">1000</integer>
 </resources>
