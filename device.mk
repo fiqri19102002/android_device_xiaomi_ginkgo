@@ -15,7 +15,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     NotchBarKiller \
-    WillowFrameworkRes
+    WillowFrameworkRes \
+    GoogleCameraGo
 
 # AID/fs configs
 PRODUCT_PACKAGES += \
