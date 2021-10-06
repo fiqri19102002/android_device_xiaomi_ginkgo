@@ -8,10 +8,6 @@
         "target_path":  "vendor/xiaomi/ginkgo"
     },
     {
-        "repository":   "android_vendor_miuicamera",
-        "target_path":  "vendor/miuicamera",
-    },
-    {
         "repository":   "kdrag0n/proton-clang",
         "target_path":  "prebuilts/clang/host/linux-x86/clang-proton",
     }
