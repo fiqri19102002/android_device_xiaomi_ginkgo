@@ -26,7 +26,7 @@ $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 # Inherit some common Evolution X stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_CHARGER := true
-EVO_BUILD_TYPE := OFFICIAL
+EVO_BUILD_TYPE := UNOFFICIAL
 TARGET_GAPPS_ARCH := arm64
 WITH_GAPPS := true
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
