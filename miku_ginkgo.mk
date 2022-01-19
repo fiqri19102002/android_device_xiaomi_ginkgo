@@ -30,6 +30,12 @@ MIKU_GAPPS := true
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Maintaier
+MIKU_MASTER := Fiqri_Ardyansyah
+
+# MikuUI OFFICIAL
+TARGET_MIKU_BUILD_VARIANT := UNOFFICIAL
+
 # Device identifier
 PRODUCT_NAME := miku_ginkgo
 PRODUCT_DEVICE := ginkgo
