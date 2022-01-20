@@ -99,4 +99,7 @@
     <string name="lcd_hbm_tile_title">HBM</string>
     <string name="lcd_cabc_title">Mode CABC</string>
     <string name="lcd_features_info">Mode Kecerahan Tinggi (HBM) meningkatkan kecerahan tampilan maksimum untuk meningkatkan visibilitas di bawah sinar matahari. Meningkatkan konsumsi daya.\n\nKontrol Lampu Latar Adaptif Konten (CABC) menyesuaikan kecerahan layar dan lampu latar berdasarkan konten yang ditampilkan saat ini untuk mengurangi konsumsi daya tanpa degradasi.</string>
+
+    <!-- FPS Info -->
+    <string name="fps_info_title">Info FPS</string>
 </resources>
