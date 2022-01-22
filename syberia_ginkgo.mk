@@ -27,6 +27,7 @@ $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 $(call inherit-product, vendor/syberia/common.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
+SYBERIA_BUILD_TYPE := UNOFFICIAL
 
 # Device identifier
 PRODUCT_NAME := syberia_ginkgo
