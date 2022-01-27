@@ -30,6 +30,7 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 EVO_BUILD_TYPE := UNOFFICIAL
 WITH_GOOGLE_APEX := false
+TARGET_SUPPORTS_QUICK_TAP := true
 WITH_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
 
