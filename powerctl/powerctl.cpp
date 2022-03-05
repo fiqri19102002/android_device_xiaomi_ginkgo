@@ -1,8 +1,8 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<sstream>
-#include<fstream> 
-#include<android-base/properties.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <sstream>
+#include <fstream> 
+#include <android-base/properties.h>
 
 #define THERMAL_SCONFIG "/sys/class/thermal/thermal_message/sconfig"
 #define THERMAL_LEVEL_DEFAULT 0
@@ -33,13 +33,13 @@ int main(void)
     // 调度
     std::ostringstream oss;
     oss << POWERCFG_EXEC << " ";
-    if (current == -1 || current == 3) {
+    if (current == 0 || current == 2) {
         oss << "balance" << std::endl;
-    } else if (current < 3) {
+    } else if (current == 1) {
         oss << "powersave" << std::endl;
-    } else if (current <= 5) {
+    } else if (current <= 4) {
         oss << "performance" << std::endl;
-    } else if (current == 6) {
+    } else if (current <= 6) {
         oss << "fast" << std::endl;
     }
     system(oss.str().c_str());
