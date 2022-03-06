@@ -33,6 +33,9 @@
 # Fingerprint devices
 /dev/goodix_fp                                                                                 u:object_r:fingerprint_device:s0
 
+# FPS Info
+/sys/class/drm/card0/sde-crtc-0/measured_fps                                                   u:object_r:vendor_sysfs_graphics:s0
+
 # KCAL
 /sys/devices/platform/kcal_ctrl.0(/.*)?         u:object_r:kcal_dev:s0
 /sys/bus/platform/drivers/kcal_ctrl(/.*)?       u:object_r:kcal_dev:s0
