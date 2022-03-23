@@ -29,6 +29,7 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 EVO_BUILD_TYPE := UNOFFICIAL
 TARGET_GAPPS_ARCH := arm64
 WITH_GAPPS := true
+WITH_GOOGLE_APEX := false
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Device identifier
