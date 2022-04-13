@@ -23,14 +23,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# Inherit some common Evolution X stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_CHARGER := true
-EVO_BUILD_TYPE := UNOFFICIAL
-TARGET_GAPPS_ARCH := arm64
-WITH_GAPPS := true
-WITH_GOOGLE_APEX := false
+
+# Inherit some common Evolution X stuff
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+EVO_BUILD_TYPE := UNOFFICIAL
+WITH_GOOGLE_APEX := false
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
 
 # Device identifier
 PRODUCT_NAME := evolution_ginkgo
